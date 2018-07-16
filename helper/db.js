@@ -7,4 +7,5 @@ module.exports=function (){
     mongoose.connection.on('error',function(){
         console.log('Hata oluştu.');
     });
+    mongoose.Promise=global.Promise;
 };
